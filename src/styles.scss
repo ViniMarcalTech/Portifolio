@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+    --text: #f4f4f4;
+    --text-secundary: #DDDDDD;
+    --background: #212529;
+    --bg: #1b1e20;
+    --background-secundary: #1C1F22;
+    --primary: #FF5A13;
+    --primary-hover: #cf4f18;
+    --text-orange: #F38C21;
+    --secondary: #f2f2f2;
+    --accent: #ffb084;
+    --gray: #464a52;
+
+    --font-secundary: "Nunito", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    // font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Iceland", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    scroll-behavior: smooth;
+
+    //Scrollbar Personalizado
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #2f343a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(223, 223, 223, 0.962);
+        border-radius: 10px;
+        border: 2px solid #2f343a;
+    }
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--text);
+    background-color: var(--bg);
+    // background-color: #020a13;
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

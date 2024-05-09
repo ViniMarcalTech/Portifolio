@@ -1,0 +1,21 @@
+<div id="skills" class="skills">
+      
+    <div class="skills_left">
+        
+        <h2 class="skills_left_title">Minhas habilidades e tecnologias</h2>
+        <p class="skills_left_subtitle">Passe o mouse sobre os cards (Adicionar icon mouse) </p>
+            
+        
+    </div>
+    
+    <div class="skills_right">
+        <ul class="skills_right_list">
+            @for (card of cardSkillsList; track $index) {
+                <li class="skills_right_list_card">
+                    <ng-icon [name]="card.icon" size="5.5rem"></ng-icon>
+                    
+                </li>
+            }
+        </ul>
+    </div>
+</div>

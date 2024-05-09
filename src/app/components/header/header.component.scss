@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 14rem;
+  padding: 0 8rem;  
+  color: var(--text);
+  font-size: 2.4rem;
+  transition: .5s;
+  // position: fixed;
+
+  //Temporario até criar menu hamburguer
+  @media screen and (max-width: 500px) {
+   justify-content: center;
+  }
+  
+  &.scrolled {
+    background-color: #44444460;
+    height: 8.5rem;
+  }
+
+  &_menu {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+
+    &_item {      
+      &_link {
+        transition: .2s;
+
+        &:hover {
+          color: var(--primary);
+        }
+
+        &.download-button {
+          color: var(--primary);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: .8rem;
+          background-color: #A0A0A012;
+          width: 14rem;
+          height: 4.5rem;
+          border-radius: 1rem;
+          border: .1rem solid var(--primary);
+          font-size: 2rem;
+          transition: .2s;
+          
+          &:hover {
+            scale: 1.05;
+            box-shadow: #ff5a132a 0px 4px 10px;
+          }
+        }
+      }
+    }
+  }
+}

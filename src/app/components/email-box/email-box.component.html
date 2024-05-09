@@ -1,0 +1,19 @@
+<div 
+    class="email_box" 
+    [cdkCopyToClipboard]="emailTxt"
+    (mouseover)="copyTxtEnable = true" 
+    (mouseleave)="copyTxtEnable = false" 
+    (click)="handleCopy()">
+    
+    <span class="email_box_icon">
+        <ng-icon name="ionMailOutline" size="1.8rem"></ng-icon>
+    </span>
+
+    <span class="email_box_copy" [ngClass]="{'clicked': copyClicked}" (change)="handleCopy()">Copiado!</span>
+
+    <div class="email_box_txt">
+        <span class="email_box_txt_email" [ngClass]="{'disabled': copyTxtEnable}">vinicius.dm1515&#64;gmail.com</span>
+        <span class="email_box_txt_copy" [ngClass]="{'disabled': !copyTxtEnable}">Clique para copiar</span>
+    </div>
+   
+</div>

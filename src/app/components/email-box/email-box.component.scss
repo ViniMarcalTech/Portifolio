@@ -1,0 +1,56 @@
+.email_box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: .1rem solid #444;
+    cursor: pointer;
+    padding: 2rem;
+    position: relative;
+
+    width: 29.5rem;
+    transition: 1s;
+
+    color: var(--text-secundary);
+    background-color: #2222224f;
+
+    &:hover {
+        background-color: #bb553c;
+    }
+
+    &_icon {
+        border-right: .1rem solid #444;
+        padding-right: 2rem;
+    }
+
+    &_txt {
+        position: relative;
+        height: 2rem;
+        width: 100%;
+        font-size: 1.8rem;
+        
+        &_copy, &_email {
+            position: absolute;
+            position: absolute;
+            opacity: 1;
+            transition: .4s;
+                                  
+            &.disabled {
+                opacity: 0;
+            }
+        }
+    }
+
+    &_copy {
+        position: absolute;
+        top: 1rem;
+        right: 30%;
+        transform: rotate(-5deg);
+        opacity: 0;
+        transition: .4s;
+
+        &.clicked {
+            opacity: 1;
+            top: -1rem;
+        }
+    }
+}
