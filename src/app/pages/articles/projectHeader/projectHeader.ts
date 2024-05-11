@@ -1,5 +1,5 @@
 
-export type Header = {
+export type ProjectHeader = {
     txt: string
     href: string
     icon?: string

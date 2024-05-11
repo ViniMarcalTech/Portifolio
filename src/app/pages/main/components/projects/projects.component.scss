@@ -1,7 +1,14 @@
 .card_image{     
     width: 30rem;
-    border-radius: 2rem;    
+    border-radius: 2rem;   
+    padding-left: 1rem; 
+    transition: transform 0.6s ease;
 }
+.card_image:hover{
+    transform: scale(1.1);
+    
+}
+
 .projects {
     height: 120vh;
     display: flex;
@@ -16,6 +23,7 @@
 
     &_subtitle {
         font-family: var(--font-secundary);
+        padding-left: 1rem;
     }
 
     &_list {
@@ -30,6 +38,7 @@
             width: 50rem;
             height: 20rem;
             border-radius: 2rem;
+            
             
             
             display: flex;

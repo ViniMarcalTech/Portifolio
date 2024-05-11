@@ -1,14 +1,19 @@
 <div id="projects" class="projects">
     <h2 class="projects_title">Projetos</h2>
-    <!-- <p class="projects_subtitle">Alguns de meus porojetos...</p> -->
 
     <ul class="projects_list">
         @for (project of projectsList; track $index) {
             <li class="projects_list_card">
+                <a href="{{project.hrefUrl}}">
                 <img src="{{project.imgUrl}}" alt="Projetos" class="card_image" >
+                </a>
                 <img src="" alt="">
                 <div class="projects_subtitle">{{ project.name}}</div>
+
             </li>
         }
     </ul>
 </div>
+
+
+

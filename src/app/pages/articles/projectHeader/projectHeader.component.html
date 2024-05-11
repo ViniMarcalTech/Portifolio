@@ -1,0 +1,17 @@
+<header class="header">
+    <a href="#">
+        <img ngSrc="assets/Logo.png" width="65" height="65" />
+    </a> 
+    
+    <ul class="header_menu">
+        @for (item of headerItens; track $index) {
+            <li class="header_menu_item">
+                <a class="header_menu_item_link" [ngClass]="{'download-button': item.isButton}" [href]="item.href" [target]="item.pdf ? '_blank' : '' ">
+                    @if (item.icon) {
+                        <ng-icon [name]="item.icon"></ng-icon>
+                    }
+                    {{ item.txt }}
+            </a></li>
+        }
+    </ul>
+</header>

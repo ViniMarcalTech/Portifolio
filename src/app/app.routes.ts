@@ -1,11 +1,14 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/main/components/home/home.component';
-import { AboutComponent } from './pages/main/components/about/about.component';
 import { MainComponent } from './pages/main/main.component';
+import { SpringsecurityPrComponent } from './pages/articles/springsecurity-pr/springsecurity-pr.component';
 
 export const routes: Routes = [
     {
         path: '',
         component: MainComponent
+    },
+    {
+        path: 'spring_security_project',
+        component: SpringsecurityPrComponent
     }
 ];

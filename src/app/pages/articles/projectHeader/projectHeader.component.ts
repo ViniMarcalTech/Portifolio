@@ -3,10 +3,10 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { ionArrowDownOutline, ionBulbOutline, ionCallOutline, ionHomeOutline, ionRocketOutline, ionTerminalOutline } from "@ng-icons/ionicons";
-import { Header } from './header';
+import { ProjectHeader } from './projectHeader';
 
 @Component({
-  selector: 'app-header',
+  selector: 'project-header',
   standalone: true,
   imports: [
     RouterLink, 
@@ -16,11 +16,11 @@ import { Header } from './header';
     NgStyle
   ],
   providers: [provideIcons({ionRocketOutline, ionHomeOutline, ionBulbOutline, ionTerminalOutline, ionCallOutline, ionArrowDownOutline})],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  templateUrl: './projectHeader.component.html',
+  styleUrl: './projectHeader.component.scss'
 })
-export class HeaderComponent implements OnInit{
-  headerItens: Header[] = [];
+export class ProjectHeaderComponent implements OnInit{
+  headerItens: ProjectHeader[] = [];
   
   scrolled: boolean = false;
   
@@ -38,21 +38,9 @@ export class HeaderComponent implements OnInit{
 
     this.headerItens = [
       {
-        txt: 'Início',
+        txt: 'Home',
         href: '#',
-      },
-      {
-        txt: 'Sobre',
-        href: '#about',
-      },
-      {
-        txt: 'Habilidades',
-        href: '#skills',
-      },
-      {
-        txt: 'Projetos',
-        href: '#projects',
-      },
+      },   
       {
         txt: 'Contato',
         href: '#footer',

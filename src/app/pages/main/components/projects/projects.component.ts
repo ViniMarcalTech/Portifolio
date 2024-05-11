@@ -12,21 +12,28 @@ export class ProjectsComponent {
 
   projectsList: Project[] = [
     {
-      imgUrl: 'assets/projects/projeto_01.png',
-      name: 'Um texto de um tamanho rasoavel explicando o basico do projeto 01.'
+      imgUrl: 'assets/projects/projeto_spring_security/capa.png',
+      name: 'Serviço de controle e autenticação de usuarios, com Java language, Spring Security, JWT, Angular 17, PostgreSQL ',
+      hrefUrl: '/spring_security_project'
     },
     {
-      imgUrl: 'assets/projects/projeto_02.png',
-      name: 'Um texto de um tamanho rasoavel explicando o basico do projeto 02 contando caracteres aqui por exemplo foram exatamente 100 caracteres.'
+      imgUrl:'assets/projects/construcao.gif' ,
+      name: '',
+      hrefUrl: ''
     },
+    /** 
     {
       imgUrl: 'assets/projects/projeto_03.png',
-      name: 'Em desenvolvimento 03...'
+      name: 'Em desenvolvimento 03...',
+      hrefUrl: ''
     },
     {
       imgUrl: 'assets/projects/projeto_04.png',
-      name: 'Em desenvolvimento 04...'
+      name: 'Em desenvolvimento 04...',
+      hrefUrl: ''
     },
+
+*/
 
 
   ];
