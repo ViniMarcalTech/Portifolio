@@ -1,10 +1,13 @@
+
+
 .skills {
-    height: 130vh;
+    height: 100rem;
     padding: 0 10rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: var(--background-secundary);
+    gap: 2rem;
 
     @media screen and (max-width: 500px) {
         flex-wrap: wrap;
@@ -21,7 +24,6 @@
         &_subtitle {
             font-family: var(--font-secundary);
             color: var(--text-secundary);
-            margin-top: 2rem;
         }
     }
 
@@ -63,8 +65,4 @@
         }
     }
 }
-.background-image{
-    width: 50rem;
-    height: 40rem;
-    border-radius: 50rem;
-}
+

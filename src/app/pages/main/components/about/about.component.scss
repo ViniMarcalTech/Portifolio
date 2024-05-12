@@ -1,5 +1,6 @@
+.page{height: 100%;}
 .about {
-    height: 100vh;
+    height: 100rem;
     padding: 0 10rem;
 
     @media screen and (max-width: 500px) {
@@ -11,7 +12,7 @@
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         
         @media screen and (max-width: 500px) {
             flex-wrap: wrap;

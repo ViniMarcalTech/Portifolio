@@ -14,7 +14,7 @@ export class ProjectsComponent {
     {
       imgUrl: 'assets/projects/spring_security_project.png',
       name: 'Serviço de controle e autenticação de usuarios, com Java language, Spring Security, JWT, Angular 17, PostgreSQL ',
-      hrefUrl: '#'
+      hrefUrl: 'https://vinimarcaltech.github.io/springsecurity_project/'
     },
     {
       imgUrl:'assets/projects/construcao.gif' ,
